@@ -15,7 +15,7 @@ use clap::Parser;
 fn main() -> Result<(), anyhow::Error> {
     // Gather the krun context from the command line arguments and configure the workload
     // accordingly.
-    let ctx = KrunContext::try_from(Args::parse())?;
+    let ctx = KrunContext::try_from(Args::parse())?
 
     // Run the workload. If behaving properly, the main thread will not return from this
     // function.
